@@ -1,14 +1,14 @@
 # NextDayRainPrediction
-- data access via kaggle: https://www.kaggle.com/datasets/jsphyg/weather-dataset-rattle-package?select=weatherAUS.csv (April 2024)
+- Data access via kaggle: https://www.kaggle.com/datasets/jsphyg/weather-dataset-rattle-package?select=weatherAUS.csv (April 2024)
 
 ## EDA
 Currently the EDA part consists of histogram of numerical features and correlation heatmap. More EDA is to be done.
 
-## Preprocessing - Ain
+## Preprocessing - [Ain](https://github.com/novicecoderjill) 
 This data is preprocessed by several steps:
 1. Data Cleaning
-    - remove null rows
-    - new column `Month` is introduced by extracting the month from column `Date`, whereas the column `Date` is dropped.
+    - Remove null rows
+    - New column `Month` is introduced by extracting the month from column `Date`, whereas the column `Date` is dropped.
 2. Handling Outlier
     - Outliers are handled through z-score, where any z-score that exceeds the set threshold (`outlier_threshold = 3`) is filtered out.
 3. One-hot encoding
@@ -18,7 +18,7 @@ This data is preprocessed by several steps:
         - SMOTE
         - Random Undersampling
 
-## Feature Selection - Ain
+## Feature Selection - [Ain](https://github.com/novicecoderjill) 
 1. For numerical features, anova f-test was performed to observe the f-score of the datasets. This was applied to all three original preprocessed_df, preprocessed_smote_data, and RUS_df.
     - Each dataset had different ranking of f-scores where the top 5 features are:
         - `Preprocessed_df: Temp9am, MinTemp, Rainfall, WindSpeed3pm, MaxTemp`
