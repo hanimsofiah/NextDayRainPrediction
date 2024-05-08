@@ -1,0 +1,248 @@
+*------------------------------------------------------------*
+User:                u63854254
+Date:                08 May 2024
+Time:                12:34:20
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+          Measurement    Frequency
+ Role        Level         Count
+ 
+TARGET      BINARY           1
+ 
+ 
+ 
+ 
+ 
+                                                                                               BINNED_KS_
+                                                                      _KS_PROB_                   PROB_
+Obs         TARGET         TARGETLABEL    _AUR_    _GINI_      KS       CUTOFF     _KS_BIN_      CUTOFF
+ 
+ 1     RainTomorrow_Yes                   0.648     0.296    0.296      0.397        0.289        0.579
+ 
+ 
+ 
+ 
+ 
+                                                                         _VKS_              _VBINNED_
+                                                                         PROB_     _VKS_     KS_PROB_
+Obs         TARGET         TARGETLABEL    _VAUR_    _VGINI_     VKS     CUTOFF_     BIN_     CUTOFF_
+ 
+ 1     RainTomorrow_Yes                    0.645     0.291     0.291     0.397     0.283      0.579
+ 
+ 
+ 
+ 
+ 
+                                                                                               BINNED_KS_
+                                                                      _KS_PROB_                   PROB_
+Obs         TARGET         TARGETLABEL    _AUR_    _GINI_      KS       CUTOFF     _KS_BIN_      CUTOFF
+ 
+ 1     RainTomorrow_Yes                   0.566     0.133    0.103      0.464         0.1         0.474
+ 
+ 
+ 
+ 
+ 
+                                                                         _VKS_              _VBINNED_
+                                                                         PROB_     _VKS_     KS_PROB_
+Obs         TARGET         TARGETLABEL    _VAUR_    _VGINI_     VKS     CUTOFF_     BIN_     CUTOFF_
+ 
+ 1     RainTomorrow_Yes                    0.517     0.033     0.074     0.466     0.074      0.445
+ 
+ 
+ 
+ 
+ 
+                                                                                            BINNED_KS_
+                                                                   _KS_PROB_                   PROB_
+Obs         TARGET         TARGETLABEL    _AUR_    _GINI_    KS      CUTOFF     _KS_BIN_      CUTOFF
+ 
+ 1     RainTomorrow_Yes                     1         1       1      0.471          1          0.59
+ 
+ 
+ 
+ 
+ 
+                                                                         _VKS_              _VBINNED_
+                                                                         PROB_     _VKS_     KS_PROB_
+Obs         TARGET         TARGETLABEL    _VAUR_    _VGINI_     VKS     CUTOFF_     BIN_     CUTOFF_
+ 
+ 1     RainTomorrow_Yes                    0.65       0.3      0.258     0.551     0.254       0.61
+ 
+ 
+ 
+ 
+ 
+                                                                                               BINNED_KS_
+                                                                      _KS_PROB_                   PROB_
+Obs         TARGET         TARGETLABEL    _AUR_    _GINI_      KS       CUTOFF     _KS_BIN_      CUTOFF
+ 
+ 1     RainTomorrow_Yes                   0.666     0.331    0.297      0.477        0.295        0.594
+ 
+ 
+ 
+ 
+ 
+                                                                         _VKS_              _VBINNED_
+                                                                         PROB_     _VKS_     KS_PROB_
+Obs         TARGET         TARGETLABEL    _VAUR_    _VGINI_     VKS     CUTOFF_     BIN_     CUTOFF_
+ 
+ 1     RainTomorrow_Yes                    0.648     0.295     0.291     0.535     0.271      0.592
+ 
+ 
+ 
+ 
+ 
+                                                                                               BINNED_KS_
+                                                                      _KS_PROB_                   PROB_
+Obs         TARGET         TARGETLABEL    _AUR_    _GINI_      KS       CUTOFF     _KS_BIN_      CUTOFF
+ 
+ 1     RainTomorrow_Yes                   0.657     0.315    0.296       .001        0.286         0.5
+ 
+ 
+ 
+ 
+ 
+                                                                         _VKS_              _VBINNED_
+                                                                         PROB_     _VKS_     KS_PROB_
+Obs         TARGET         TARGETLABEL    _VAUR_    _VGINI_     VKS     CUTOFF_     BIN_     CUTOFF_
+ 
+ 1     RainTomorrow_Yes                    0.648     0.295     0.291      .001      0.29       0.5
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Fit Statistics
+Model Selection based on Valid: Misclassification Rate (_VMISC_)
+ 
+                                                                         Train:                          Valid:
+                                                         Valid:         Average          Train:         Average
+Selected                                           Misclassification    Squared    Misclassification    Squared
+ Model      Model Node     Model Description              Rate           Error            Rate           Error
+ 
+   Y        Tree2          Decision Tree (2)            0.35463         0.22305         0.35194         0.22384
+            HPSVM2         HP SVM (2)                   0.35463         0.35194         0.35194         0.35463
+            HPReg2         HP Regression (2)            0.35521         0.22224         0.35169         0.22471
+            HPDMForest2    HP Forest (2)                0.38457         0.03799         0.00000         0.23194
+            HPBNC2         HP BN Classifier (2)         0.47726         0.24661         0.45270         0.25587
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Fit Statistics Table
+Target: RainTomorrow_Yes
+ 
+Data Role=Train
+ 
+Statistics                                                          Tree2     HPSVM2     HPReg2    HPDMForest2     HPBNC2
+ 
+Train: Bin-Based Two-Way Kolmogorov-Smirnov Probability Cutoff       0.58       0.50       0.59         0.59         0.47
+Train: Kolmogorov-Smirnov Statistic                                  0.30       0.30       0.30         1.00         0.10
+Train: Average Squared Error                                         0.22       0.35       0.22         0.04         0.25
+Train: Roc Index                                                     0.65       0.66       0.67         1.00         0.57
+Train: Cumulative Percent Captured Response                         15.22      15.22      15.91        20.01        11.71
+Train: Percent Captured Response                                     7.59       7.59       7.81         9.98         5.39
+Selection Criterion: Valid: Misclassification Rate                   0.35       0.35       0.36         0.38         0.48
+Train: Total Degrees of Freedom                                   4049.00        .          .            .            .
+Train: Frequency of Classified Cases                                  .      4049.00    4049.00      4049.00      4049.00
+Train: Divisor for ASE                                            8098.00    8098.00    8098.00      8098.00      8098.00
+Train: Gain                                                         52.17      52.17      59.05       100.05        17.07
+Train: Gini Coefficient                                              0.30       0.32       0.33         1.00         0.13
+Train: Bin-Based Two-Way Kolmogorov-Smirnov Statistic                0.29       0.29       0.30         1.00         0.10
+Train: Kolmogorov-Smirnov Probability Cutoff                         0.40       0.00       0.48         0.47         0.46
+Train: Cumulative Lift                                               1.52       1.52       1.59         2.00         1.17
+Train: Lift                                                          1.52       1.52       1.56         2.00         1.08
+Train: Maximum Absolute Error                                        0.76       1.00       0.81         0.47         0.84
+Train: Misclassification Rate                                        0.35       0.35       0.35         0.00         0.45
+Train: Sum of Frequencies                                         4049.00    4049.00    4049.00      4049.00      4049.00
+Train: Root Average Squared Error                                    0.47       0.59       0.47         0.19         0.50
+Train: Cumulative Percent Response                                  76.07      76.07      79.51       100.00        58.52
+Train: Percent Response                                             76.07      76.07      78.22       100.00        53.96
+Train: Sum of Squared Errors                                      1806.29    2850.00    1799.73       307.62      1997.03
+Train: Number of Wrong Classifications                                .      1425.00    1424.00         0.00      1833.00
+ 
+ 
+Data Role=Valid
+ 
+Statistics                                                          Tree2     HPSVM2     HPReg2    HPDMForest2     HPBNC2
+ 
+Valid: Kolmogorov-Smirnov Statistic                                  0.29       0.29       0.29         0.26         0.07
+Valid: Average Squared Error                                         0.22       0.35       0.22         0.23         0.26
+Valid: Roc Index                                                     0.65       0.65       0.65         0.65         0.52
+Valid: Bin-Based Two-Way Kolmogorov-Smirnov Probability Cutoff       0.58       0.50       0.59         0.61         0.45
+Valid: Cumulative Percent Captured Response                         15.19      15.19      15.54        15.90         8.29
+Valid: Percent Captured Response                                     7.60       7.60       7.71         7.61         3.91
+Valid: Frequency of Classified Cases                                  .      1737.00    1737.00      1737.00      1737.00
+Valid: Divisor for VASE                                           3474.00    3474.00    3474.00      3474.00      3474.00
+Valid: Gain                                                         51.65      51.65      55.08        58.71        17.29
+Valid: Gini Coefficient                                              0.29       0.30       0.30         0.30         0.03
+Valid: Bin-Based Two-Way Kolmogorov-Smirnov Statistic                0.28       0.29       0.27         0.25         0.07
+Valid: Kolmogorov-Smirnov Probability Cutoff                         0.40       0.00       0.54         0.55         0.47
+Valid: Cumulative Lift                                               1.52       1.52       1.55         1.59         0.83
+Valid: Lift                                                          1.52       1.52       1.54         1.52         0.78
+Valid: Maximum Absolute Error                                        0.76       1.00       0.80         0.93         0.81
+Valid: Misclassification Rate                                        0.35       0.35       0.36         0.38         0.48
+Valid: Sum of Frequencies                                         1737.00    1737.00    1737.00      1737.00      1737.00
+Valid: Root Average Squared Error                                    0.47       0.60       0.47         0.48         0.51
+Valid: Cumulative Percent Response                                  75.87      75.87      77.59        79.40        41.38
+Valid: Percent Response                                             75.87      75.87      77.01        75.99        39.08
+Valid: Sum of Squared Errors                                       777.63    1232.00     780.65       805.75       888.88
+Valid: Number of Wrong Classifications                                .       616.00     617.00       668.00       829.00
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Event Classification Table
+Model Selection based on Valid: Misclassification Rate (_VMISC_)
+ 
+                                       Data                            Target      False       True        False       True
+Model Node     Model Description       Role             Target         Label     Negative    Negative    Positive    Positive
+ 
+Tree2          Decision Tree (2)       TRAIN       RainTomorrow_Yes                1150        1750         275         874
+Tree2          Decision Tree (2)       VALIDATE    RainTomorrow_Yes                 498         750         118         371
+HPBNC2         HP BN Classifier (2)    TRAIN       RainTomorrow_Yes                 852        1044         981        1172
+HPBNC2         HP BN Classifier (2)    VALIDATE    RainTomorrow_Yes                 388         427         441         481
+HPDMForest2    HP Forest (2)           TRAIN       RainTomorrow_Yes                   .        2025           .        2024
+HPDMForest2    HP Forest (2)           VALIDATE    RainTomorrow_Yes                 410         610         258         459
+HPReg2         HP Regression (2)       TRAIN       RainTomorrow_Yes                1149        1750         275         875
+HPReg2         HP Regression (2)       VALIDATE    RainTomorrow_Yes                 498         749         119         371
+HPSVM2         HP SVM (2)              TRAIN       RainTomorrow_Yes                1150        1750         275         874
+HPSVM2         HP SVM (2)              VALIDATE    RainTomorrow_Yes                 498         750         118         371
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*
